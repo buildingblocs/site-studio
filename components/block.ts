@@ -26,15 +26,26 @@ const blockImageCover = {
             validation: (Rule) => Rule.required()
         }),
         defineField({
+            name: 'altText',
+            title: "Alt Text",
+            type: 'string',
+            validation: (Rule) => Rule.required()
+        }),
+        defineField({
             name: 'name',
             title: 'Name',
             type: 'string',
             validation: (Rule) => Rule.required()
         }),
         defineField({
+            name: 'link',
+            type: 'url',
+            validation: (Rule) => Rule.required()
+        }),
+        defineField({
             name: 'desc',
             title: 'Description',
-            type: 'string',
+            type: 'text',
             validation: (Rule) => Rule.required()
         })
     ],
